@@ -1,0 +1,461 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.myxscq.jiekai.testhomework9demo1.DetailsActivity"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivDetailImageDisplay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailsTitle"
+        android:textSize="10pt"
+        android:layout_below="@+id/ivDetailImageDisplay"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Price"
+        android:textSize="8pt"
+        android:id="@+id/tvDetailsPrice"
+        android:layout_below="@+id/tvDetailsTitle"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetailsLocation"
+        android:text="Location"
+        android:layout_below="@+id/tvDetailsPrice"
+        android:layout_alignParentLeft="true"
+        android:textSize="8pt"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tvDetailsLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/buyNowLayout"
+        >
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imDetailsTopRated"
+            android:layout_marginLeft="10px"
+
+
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBuyNow"
+            android:text="Buy now"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+
+            />
+
+        <ImageView
+            android:layout_marginRight="10px"
+
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:id="@+id/imDetailsFacebook"
+            android:src="@drawable/fb"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/buyNowLayout"
+        android:id="@+id/labelLayout">
+        <Button
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:text="BASIC INFO"
+            android:id="@+id/btBaciInfo"
+            android:background="#7aa8d9"/>
+
+        <Button
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:text="SELLER"
+            android:id="@+id/btSeller"/>
+        <Button
+            android:layout_width="220px"
+            android:layout_height="wrap_content"
+            android:text="SHIPPING"
+            android:id="@+id/btShipping"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelLayout"
+        android:id="@+id/basicInfoLayout"
+        android:visibility="visible">
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Category Name"
+                android:id="@+id/tvDetailsCategory"
+                android:textStyle="bold"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Condition"
+                android:id="@+id/tvDetailsCondition"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsCategory"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:text="Buying Format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetailsBuyingFormat"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsCondition"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvDetailsCategoryName"
+                android:layout_alignTop="@+id/tvDetailsCategory"
+                android:text="testtesttesttest"
+                android:layout_toRightOf="@+id/tvDetailsCategory"
+                android:layout_toEndOf="@+id/tvDetailsCategory"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetailsConditionContent"
+                android:text="testtesttesttest"
+                android:layout_alignTop="@+id/tvDetailsCondition"
+                android:layout_alignLeft="@+id/tvDetailsCategoryName"
+                android:layout_alignStart="@+id/tvDetailsCategoryName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="testtesttesttest"
+                android:id="@+id/tvDetailsBuyingFormatContent"
+                android:layout_alignTop="@+id/tvDetailsBuyingFormat"
+                android:layout_alignLeft="@+id/tvDetailsConditionContent"
+                android:layout_alignStart="@+id/tvDetailsConditionContent" />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelLayout"
+        android:id="@+id/sellerLayout"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:id="@+id/tvDetailsUserName"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback Score"
+            android:id="@+id/tvDetailsFeedbackScore"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDetailsUserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Positive Feedback"
+            android:id="@+id/tvDetailsPositiveScore"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDetailsFeedbackScore"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Feedback Rating"
+            android:id="@+id/tvDetailsFeedbackRating"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDetailsPositiveScore"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Top Rated"
+            android:id="@+id/tvDetailsTopRated"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDetailsFeedbackRating"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Store"
+            android:id="@+id/tvStore"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDetailsTopRated"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDetailsUserNameContent"
+            android:layout_alignTop="@+id/tvDetailsUserName"
+            android:layout_toRightOf="@+id/tvDetailsUserName"
+            android:layout_toEndOf="@+id/tvDetailsUserName"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvDetailsFeedbackScoreContent"
+            android:layout_alignTop="@+id/tvDetailsFeedbackScore"
+            android:layout_alignLeft="@+id/tvDetailsUserNameContent"
+            android:layout_alignStart="@+id/tvDetailsUserNameContent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvDetailsPositiveScoreContent"
+            android:layout_alignTop="@+id/tvDetailsPositiveScore"
+            android:layout_alignLeft="@+id/tvDetailsFeedbackScoreContent"
+            android:layout_alignStart="@+id/tvDetailsFeedbackScoreContent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvDetailsFeedbackRatingContent"
+            android:layout_alignTop="@+id/tvDetailsFeedbackRating"
+            android:layout_alignLeft="@+id/tvDetailsPositiveScoreContent"
+            android:layout_alignStart="@+id/tvDetailsPositiveScoreContent" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/ivDetailsTopRatedContent"
+            android:layout_alignTop="@+id/tvDetailsTopRated"
+            android:layout_alignLeft="@+id/tvDetailsPositiveScoreContent"
+            android:layout_alignStart="@+id/tvDetailsPositiveScoreContent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tvStoreContent"
+            android:layout_alignTop="@+id/tvStore"
+            android:layout_alignLeft="@+id/tvDetailsPositiveScoreContent"
+            android:layout_alignStart="@+id/tvDetailsPositiveScoreContent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelLayout"
+            android:id="@+id/shippingLayout"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Type"
+                android:id="@+id/tvDetailsShippingType"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Handling Time"
+                android:id="@+id/tvDetailsHandingTime"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsShippingType"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Shipping Location"
+                android:id="@+id/tvDetailsShipingLocation"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsHandingTime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Expedited Shipping"
+                android:id="@+id/tvDetailsExpeditedShipping"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsShipingLocation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="One Day Shipping"
+                android:id="@+id/tvDetailsOneDayShipping"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsExpeditedShipping"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Accepted"
+                android:id="@+id/tvDetailsReturnAccept"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvDetailsOneDayShipping"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvDetailsShippingTypeContent"
+                android:layout_alignTop="@+id/tvDetailsShippingType"
+                android:layout_toRightOf="@+id/tvDetailsShippingType"
+                android:layout_toEndOf="@+id/tvDetailsShippingType"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetailsHandlingTimeContent"
+                android:layout_alignTop="@+id/tvDetailsHandingTime"
+                android:layout_alignLeft="@+id/tvDetailsShippingTypeContent"
+                android:layout_alignStart="@+id/tvDetailsShippingTypeContent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetailsShipingLocationContent"
+                android:layout_alignTop="@+id/tvDetailsShipingLocation"
+                android:layout_alignLeft="@+id/tvDetailsHandlingTimeContent"
+                android:layout_alignStart="@+id/tvDetailsHandlingTimeContent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivDetailsExpeditedShippingContent"
+                android:layout_alignTop="@+id/tvDetailsExpeditedShipping"
+                android:layout_alignLeft="@+id/tvDetailsShipingLocationContent"
+                android:layout_alignStart="@+id/tvDetailsShipingLocationContent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivDetailsOneDayShippingContent"
+                android:layout_alignTop="@+id/tvDetailsOneDayShipping"
+                android:layout_alignLeft="@+id/ivDetailsExpeditedShippingContent"
+                android:layout_alignStart="@+id/ivDetailsExpeditedShippingContent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ivDetailsReturnAcceptedContent"
+                android:layout_alignTop="@+id/tvDetailsReturnAccept"
+                android:layout_alignLeft="@+id/ivDetailsOneDayShippingContent"
+                android:layout_alignStart="@+id/ivDetailsOneDayShippingContent" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

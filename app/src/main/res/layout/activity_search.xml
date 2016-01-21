@@ -1,0 +1,341 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.myxscq.jiekai.testhomework9demo1.SearchActivity">
+
+    <TextView  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvKeywordTitle"
+        android:textSize="10pt"
+        android:textColor="#111111"
+        android:layout_marginBottom="5dp"/>
+
+
+    <!--<ListView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:id="@+id/lvResultDisplay"-->
+        <!--android:layout_marginTop="30dp"></ListView>-->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30px">
+        <View
+            android:layout_height="2px"
+            android:background="#c7c7c7" />
+        <!--<TableRow android:layout_margin="2dip">-->
+           <!---->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ivImageDisplay0"-->
+                <!--/>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!-->-->
+                <!--<TextView-->
+                    <!--android:layout_width="270dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dip"-->
+                    <!--android:id="@+id/tvItemTitle0"-->
+
+
+                    <!--android:layout_margin="2dip"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="270dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/tvItemPrice0"-->
+                    <!--android:layout_weight="10"-->
+
+                    <!--android:layout_margin="2dip"/>-->
+            <!--</LinearLayout>-->
+        <!---->
+        <!--</TableRow>-->
+
+        <TableRow android:layout_margin="2dip">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="galleryImageOnclick0"
+                android:id="@+id/ivImageDisplay0"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvItemTitle0"
+                    android:onClick="titleOnClick0"
+                    android:layout_margin="2dip"/>
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemPrice0"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:layout_margin="2dip"/>
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_height="2px"
+            android:background="#c7c7c7" />
+
+
+        <TableRow android:layout_margin="2dip">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/ivImageDisplay1"
+                android:onClick="galleryImageOnclick1"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvItemTitle1"
+                    android:onClick="titleOnClick1"
+                    android:layout_margin="2dip"/>
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemPrice1"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:layout_margin="2dip"/>
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_height="2px"
+            android:background="#c7c7c7" />
+
+        <TableRow android:layout_margin="2dip">
+            <ImageView
+                android:layout_width="90dp"
+                android:onClick="galleryImageOnclick2"
+                android:layout_height="90dp"
+                android:id="@+id/ivImageDisplay2"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvItemTitle2"
+                    android:onClick="titleOnClick2"
+                    android:layout_margin="2dip"/>
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemPrice2"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:layout_margin="2dip"/>
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_height="2px"
+            android:background="#c7c7c7" />
+
+        <TableRow android:layout_margin="2dip">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="galleryImageOnclick3"
+                android:id="@+id/ivImageDisplay3"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvItemTitle3"
+                    android:onClick="titleOnClick3"
+                    android:layout_margin="2dip"/>
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemPrice3"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:layout_margin="2dip"/>
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_height="2px"
+            android:background="#c7c7c7" />
+
+        <TableRow android:layout_margin="2dip">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="galleryImageOnclick4"
+                android:id="@+id/ivImageDisplay4"
+                android:layout_marginRight="25dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:id="@+id/tvItemTitle4"
+                    android:onClick="titleOnClick4"
+                    android:layout_margin="2dip"/>
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvItemPrice4"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="6pt"
+                    android:textStyle="bold"
+                    android:layout_margin="2dip"/>
+            </LinearLayout>
+        </TableRow>
+
+
+        <!--<TableRow android:layout_margin="2dip">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ivImageDisplay1"/>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dip"-->
+                <!--android:id="@+id/tvItemTitle1"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvItemPrice1"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow android:layout_margin="2dip">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ivImageDisplay2"/>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dip"-->
+                <!--android:id="@+id/tvItemTitle2"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvItemPrice2"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow android:layout_margin="2dip">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ivImageDisplay3"/>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dip"-->
+                <!--android:id="@+id/tvItemTitle3"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvItemPrice3"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+
+        <!--<TableRow android:layout_margin="2dip">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ivImageDisplay4"/>-->
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dip"-->
+                <!--android:id="@+id/tvItemTitle4"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tvItemPrice4"-->
+
+                <!--android:layout_margin="2dip"/>-->
+            <!--</LinearLayout>-->
+        <!--</TableRow>-->
+    </TableLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:id="@+id/ivImageDisplay0"/>-->
+
+</LinearLayout>
+</ScrollView>

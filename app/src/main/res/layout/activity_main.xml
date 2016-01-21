@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffd0ffee"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eBay Search"
+        android:id="@+id/ebaySearchTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+
+            android:text="Keyword"
+            android:textSize="20dp"
+            android:id="@+id/tvKeywordLabel" />
+
+        <EditText
+            android:layout_width="200px"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKeyword"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+
+            android:text="Price From"
+            android:id="@+id/tvPriceFromLabel"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="200px"
+            android:layout_weight="10"
+            android:numeric="decimal"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPriceFrom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+
+            android:text="Price To"
+            android:id="@+id/tvPriceToLabel"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="200px"
+            android:layout_weight="10"
+            android:numeric="decimal"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPriceTo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Sort By"
+            android:id="@+id/tvSortBy"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spSortBy"
+            android:entries="@array/sortBy_Array"></Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:id="@+id/btnClear"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:id="@+id/btnSearch"/>
+
+
+    </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvShowValidation"
+    android:layout_gravity="center"
+    android:textSize="50px"
+    android:textColor="#ffb41b28"
+    android:layout_marginTop="5px"/>
+
+</LinearLayout>
